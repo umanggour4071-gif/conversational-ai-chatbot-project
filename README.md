@@ -4,19 +4,7 @@ A Flask + SQLite chatbot with a dark, responsive web interface. It supports text
 **image recognition** (a vision-capable model describes your uploads), **voice input** (speech-to-text in the
 message box) and **read-aloud** (text-to-speech on every reply).
 
-| | |
-|---|---|
-| ![Welcome screen](docs/screenshots/welcome.png) | ![Markdown reply with code and table](docs/screenshots/chat-markdown.png) |
-| ![Image attached](docs/screenshots/image-attached.png) | ![Image analysis](docs/screenshots/image-analysis.png) |
-| ![Voice input listening](docs/screenshots/voice-listening.png) | ![Mobile layout](docs/screenshots/mobile-chat.png) |
-
-> **About these screenshots.** They were captured from the real app in real Chromium, but the AI replies came from a
-> small local stand-in server (`scripts/mock_model_server.py`), not from a real model, so no API key was needed.
-> The image reply is genuinely computed from the uploaded pixels by the stand-in; the wording is not what a real
-> vision model would write. Regenerate them any time with the command in [Screenshots](#screenshots).
-
 ## Features
-
 - **Text chat** with conversation history, saved in SQLite, with context sent on every follow-up.
 - **Markdown replies**: headings, lists, tables, links, quotes and code blocks with a **Copy** button. Output is
   sanitized (no scripts, no remote images, links open safely).
