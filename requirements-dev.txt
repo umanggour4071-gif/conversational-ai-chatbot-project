@@ -1,0 +1,3 @@
+# Only needed for the real-browser end-to-end script (scripts/e2e.py) and screenshots.
+-r requirements.txt
+playwright>=1.45

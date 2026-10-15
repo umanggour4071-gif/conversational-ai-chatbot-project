@@ -1,0 +1,22 @@
+{
+  "name": "conversational-ai-chatbot-frontend-tests",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Dev-only tooling: JS unit/integration tests and vendored asset sync. The app itself needs no Node.",
+  "type": "module",
+  "scripts": {
+    "test": "node --test \"tests/js/*.test.mjs\"",
+    "vendor": "node scripts/sync_vendor.mjs"
+  },
+  "devDependencies": {
+    "jsdom": "^30.1.2",
+    "marked": "^18.1.1",
+    "dompurify": "^3.4.17",
+    "@fontsource-variable/bricolage-grotesque": "^5.2.0",
+    "@fontsource-variable/instrument-sans": "^5.2.0",
+    "@fontsource/jetbrains-mono": "^5.2.0"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}
